@@ -1,0 +1,105 @@
+/* ===========================
+   STATS
+=========================== */
+
+.stats {
+    background: var(--black);
+}
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 2rem;
+
+    margin-top: 4rem;
+}
+
+.stat-card {
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    padding: 2.5rem 2rem;
+
+    text-align: center;
+
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: var(--primary);
+
+    box-shadow: 0 15px 35px rgba(199, 240, 0, .15);
+}
+
+.stat-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 1.5rem;
+
+    border-radius: 50%;
+
+    display: grid;
+
+    place-items: center;
+
+    background: rgba(199, 240, 0, .12);
+
+    color: var(--primary);
+
+    font-size: 2rem;
+}
+
+.stat-card h3 {
+
+    font-family: var(--heading-font);
+
+    font-size: 3.5rem;
+
+    color: var(--primary);
+
+    margin-bottom: .5rem;
+
+    letter-spacing: 1px;
+}
+
+.stat-card p {
+
+    color: var(--text);
+
+    font-size: 1rem;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+
+    .stats-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .stats-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}
