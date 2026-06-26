@@ -1,6 +1,165 @@
 .hero {
+    position: relative;
+    min-height: 100vh;
 
-    height: 100vh;
+    display: flex;
+    align-items: center;
 
-    background: #111;
+    background:
+        linear-gradient(rgba(0, 0, 0, .75),
+            rgba(0, 0, 0, .80)),
+        url("../assets/images/hero.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 720px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-tag {
+    display: inline-block;
+
+    color: var(--primary);
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    font-size: .85rem;
+
+    margin-bottom: 1.5rem;
+
+    font-weight: 600;
+}
+
+.hero h1 {
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(4rem, 10vw, 7rem);
+
+    line-height: .95;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 2rem;
+}
+
+.hero h1 span {
+
+    color: var(--primary);
+}
+
+.hero p {
+
+    color: var(--text);
+
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 2.5rem;
+
+    max-width: 620px;
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+}
+
+.primary-btn {
+
+    padding: 1rem 2.2rem;
+
+    border-radius: 50px;
+
+    background: var(--primary);
+
+    color: var(--black);
+
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+.primary-btn:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 0 25px rgba(199, 240, 0, .5);
+}
+
+.secondary-btn {
+
+    padding: 1rem 2.2rem;
+
+    border-radius: 50px;
+
+    border: 2px solid var(--white);
+
+    background: transparent;
+
+    color: var(--white);
+
+    transition: var(--transition);
+}
+
+.secondary-btn:hover {
+
+    background: var(--white);
+
+    color: var(--black);
+}
+
+.scroll-indicator {
+
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.scroll-indicator span {
+
+    display: block;
+
+    width: 2px;
+
+    height: 60px;
+
+    background: var(--primary);
+
+    animation: scroll 1.8s infinite;
+}
+
+@keyframes scroll {
+
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
 }
