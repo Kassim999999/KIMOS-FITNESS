@@ -5,6 +5,7 @@ import Hero from "../components/home/Hero/Hero";
 import WhyChoose from "../components/home/WhyChoose/WhyChoose";
 import Stats from "../components/home/Stats/Stats";
 import Membership from "../components/home/Membership/Membership";
+import Classes from  "../components/home/Classes/Classes";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <WhyChoose />
       <Stats />
       <Membership />
+      <Classes />
     </>
   );
 }
