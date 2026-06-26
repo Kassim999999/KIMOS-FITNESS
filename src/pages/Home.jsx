@@ -6,6 +6,7 @@ import WhyChoose from "../components/home/WhyChoose/WhyChoose";
 import Stats from "../components/home/Stats/Stats";
 import Membership from "../components/home/Membership/Membership";
 import Classes from  "../components/home/Classes/Classes";
+import Trainers from "../components/home/Trainers/Trainers";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Stats />
       <Membership />
       <Classes />
+      <Trainers />
     </>
   );
 }
