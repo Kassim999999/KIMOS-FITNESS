@@ -2,7 +2,7 @@ import "../../../css/CTA.css";
 
 function CTA() {
   return (
-    <section className="cta">
+    <section className="cta" data-aos="zoom in">
 
       <div className="cta-overlay"></div>
 
@@ -32,9 +32,9 @@ function CTA() {
               Join Today
             </button>
 
-            <button className="cta-secondary">
-              Contact Us
-            </button>
+<a href="tel:+254748444111" className="cta-secondary">
+  Call Us
+</a>
 
           </div>
 

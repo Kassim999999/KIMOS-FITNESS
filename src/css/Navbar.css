@@ -117,6 +117,36 @@
     width: 100%;
 }
 
+.disabled-link {
+    position: relative;
+    color: white;
+    opacity: 0.55;
+    cursor: not-allowed;
+    font-weight: 500;
+    transition: var(--transition);
+    user-select: none;
+}
+
+.disabled-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: .3s;
+}
+
+.disabled-link:hover {
+    color: var(--primary);
+    opacity: 0.8;
+}
+
+.disabled-link:hover::after {
+    width: 100%;
+}
+
 /* ===========================
    RIGHT SIDE
 =========================== */

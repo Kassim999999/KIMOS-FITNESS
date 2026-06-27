@@ -32,20 +32,27 @@ function Navbar() {
         <nav className={menuOpen ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-links">
             <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
-            <li><NavLink to="/about" onClick={closeMenu}>About</NavLink></li>
+            {/* <li><NavLink to="/about" onClick={closeMenu}>About</NavLink></li>
             <li><NavLink to="/memberships" onClick={closeMenu}>Memberships</NavLink></li>
             <li><NavLink to="/classes" onClick={closeMenu}>Classes</NavLink></li>
             <li><NavLink to="/trainers" onClick={closeMenu}>Trainers</NavLink></li>
             <li><NavLink to="/gallery" onClick={closeMenu}>Gallery</NavLink></li>
-            <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
+            <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li> */}
+
+              <li><span className="disabled-link">About</span></li>
+  <li><span className="disabled-link">Memberships</span></li>
+  <li><span className="disabled-link">Classes</span></li>
+  <li><span className="disabled-link">Trainers</span></li>
+  <li><span className="disabled-link">Gallery</span></li>
+  <li><span className="disabled-link">Contact</span></li>
           </ul>
         </nav>
 
         <div className="nav-right">
 
-          <a href="tel:+254700000000" className="phone">
+          <a href="tel:+254113 979766" className="phone">
             <FaPhoneAlt />
-            <span>+254 700 000 000</span>
+            <span>+254 113 979766</span>
           </a>
 
           <button className="join-btn">

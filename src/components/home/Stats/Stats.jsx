@@ -32,7 +32,7 @@ function Stats() {
   ];
 
   return (
-    <section className="stats">
+    <section className="stats" data-aos="fade-up">
       <div className="container">
 
         <div className="section-title">
@@ -51,7 +51,8 @@ function Stats() {
         <div className="stats-grid">
 
           {stats.map((stat, index) => (
-            <div className="stat-card" key={index}>
+            <div className="stat-card" key={index}     data-aos="zoom-in-up"
+    data-aos-delay={index * 100}>
 
               <div className="stat-icon">
                 {stat.icon}

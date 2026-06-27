@@ -1,4 +1,5 @@
 import "../css/Home.css";
+import useDocumentTitle from "../hooks/useDocuments";
 
 import Navbar from "../components/layout/Navbar/Navbar";
 import Hero from "../components/home/Hero/Hero";
@@ -11,6 +12,8 @@ import CTA from "../components/home/CTA/CTA";
 import Footer from "../components/layout/Footer/Footer";
 
 function Home() {
+
+   useDocumentTitle("KIMOS Fitness | Home");
   return (
     <>
       <Navbar />

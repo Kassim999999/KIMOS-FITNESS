@@ -50,11 +50,11 @@ I'm interested in the ${planName} membership package. I'd like to get more infor
 Thank you.`
   );
 
-  window.open(`https://wa.me/2547XXXXXXXX?text=${message}`, "_blank");
+  window.open(`https://wa.me/254113979766?text=${message}`, "_blank");
 };
 
   return (
-    <section className="membership">
+    <section className="membership" data-aos="zoom-in">
 
       <div className="container">
 
@@ -77,6 +77,8 @@ Thank you.`
 
   <article
     key={index}
+        data-aos="zoom-in-up"
+    data-aos-delay={index * 100}
     className={`plan-card ${plan.featured ? "featured" : ""}`}
   >
 

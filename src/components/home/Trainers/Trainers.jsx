@@ -20,7 +20,7 @@ const trainers = [
 
 function Trainers() {
   return (
-    <section className="trainers">
+    <section className="trainers" data-aos="fade-up">
 
       <div className="container">
 

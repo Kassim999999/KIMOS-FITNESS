@@ -11,7 +11,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" data-aos="fade-up">
 
       <div className="container footer-grid">
 
@@ -78,12 +78,12 @@ function Footer() {
 
             <li>
               <FaMapMarkerAlt />
-              <span>Kahawa Sukari, Nairobi</span>
+              <span> Great wall phase 1, Beijing Road, Nairobi</span>
             </li>
 
             <li>
               <FaPhoneAlt />
-              <span>+254 XXX XXX XXX</span>
+              <span>+254 113 979766</span>
             </li>
 
             <li>
@@ -105,12 +105,12 @@ function Footer() {
 
             <li>
               <FaClock />
-              <span>Mon – Fri: 5:30 AM – 9:00 PM</span>
+              <span>Mon – Fri: 5:00 AM – 9:00 PM</span>
             </li>
 
             <li>
               <FaClock />
-              <span>Saturday: 6:00 AM – 7:00 PM</span>
+              <span>Saturday: 5:00 AM – 2:00 PM</span>
             </li>
 
             <li>
@@ -130,9 +130,9 @@ function Footer() {
           © {new Date().getFullYear()} KIMOS Fitness. All Rights Reserved.
         </p>
 
-        <p>
+        {/* <p>
           Designed & Developed by <strong>Kassim Dev</strong>
-        </p>
+        </p> */}
 
       </div>
 

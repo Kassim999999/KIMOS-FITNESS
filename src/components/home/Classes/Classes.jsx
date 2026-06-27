@@ -49,7 +49,7 @@ function Classes() {
   ];
 
   return (
-    <section className="classes">
+    <section className="classes" data-aos="fade-up">
 
       <div className="container">
 
@@ -66,11 +66,12 @@ function Classes() {
 
         </div>
 
-        <div className="schedule">
+        <div className="schedule" data-aos="fade-down">
 
           {schedule.map((item, index) => (
 
-            <div className="schedule-card" key={index}>
+            <div className="schedule-card" key={index}     data-aos="zoom-in-up"
+    data-aos-delay={index * 100}>
 
               <div className="schedule-icon">
                 {item.icon}

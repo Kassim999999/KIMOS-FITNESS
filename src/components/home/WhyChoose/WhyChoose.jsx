@@ -35,7 +35,7 @@ function WhyChoose() {
   ];
 
   return (
-    <section className="why-choose">
+    <section className="why-choose" data-aos="fade-up">
       <div className="container">
 
         <div className="section-title">
