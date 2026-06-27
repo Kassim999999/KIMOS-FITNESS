@@ -11,22 +11,22 @@ function Stats() {
   const stats = [
     {
       icon: <FaUsers />,
-      number: "1500+",
+      number: "500+",
       title: "Happy Members",
     },
     {
       icon: <FaDumbbell />,
-      number: "50+",
+      number: "10+",
       title: "Modern Equipment",
     },
     {
       icon: <FaUserTie />,
-      number: "12",
+      number: "5",
       title: "Professional Trainers",
     },
     {
       icon: <FaTrophy />,
-      number: "10+",
+      number: "3+",
       title: "Years of Excellence",
     },
   ];
